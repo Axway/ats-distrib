@@ -1,0 +1,9 @@
+* text=auto !eol
+/.classpath -text
+/.project -text
+/build.xml -text
+/pom.xml -text
+src/assembly/final-package.xml -text
+src/assembly/java-doc.xml -text
+src/main/java/com/axway/ats/distrib/MakeJavaDoc.java -text
+/todo.txt -text

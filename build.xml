@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<project name="ats-release" basedir="." xmlns="antlib:org.apache.tools.ant" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ant-contrib="antlib:net.sf.antcontrib" default="update-ats-jars-manifest">
+    <property name="zip.src.dir" value="${dist.dir}/zipsrc" />
+
+    <target name="update-ats-jars-manifest" description="">
+        <pathconvert property="lib.classpath" pathsep=" ">
+            <mapper>
+                <chainedmapper>
+                    <!-- remove absolute path -->
+                    <flattenmapper />
+                    <!-- add lib/ prefix -->
+                    <globmapper from="*" to="lib/*" />
+                </chainedmapper>
+            </mapper>
+            <path>
+                <!-- lib.home contains all jar files, in several subdirectories -->
+                <fileset dir="${zip.src.dir}/lib">
+                    <include name="*" />
+                </fileset>
+            </path>
+        </pathconvert>
+
+        <ant-contrib:for param="file">
+            <path>
+                <fileset dir="${zip.src.dir}" includes="*.*" />
+            </path>
+            <sequential>
+                <unzip src="@{file}" dest="${zip.src.dir}">
+                    <patternset>
+                        <include name="META-INF/MANIFEST.MF" />
+                    </patternset>
+                    <mapper type="flatten" />
+                </unzip>
+                <manifest file="${zip.src.dir}/MANIFEST.MF" mode="update">
+                    <attribute name="Class-Path" value="${lib.classpath}" />
+                </manifest>
+                <jar destfile="@{file}" update="true" manifest="${zip.src.dir}/MANIFEST.MF" />
+                <delete file="${zip.src.dir}/MANIFEST.MF" />
+            </sequential>
+        </ant-contrib:for>
+    </target>
+</project>
