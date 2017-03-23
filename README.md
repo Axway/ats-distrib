@@ -1,0 +1,1 @@
+Project, that builds zip archive with all needed jars for using ATS Framework, without using maven
