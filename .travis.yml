@@ -4,6 +4,7 @@ jdk:
 before_install:
      - rm ~/.m2/settings.xml
      - cp settings.xml ~/.m2
+     - rm -rf ~/.m2/repository/com/axway/ats
 script: mvn clean install deploy
 cache:
   directories:
