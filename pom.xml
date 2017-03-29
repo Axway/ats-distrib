@@ -29,6 +29,12 @@
 		<!-- Travis CI plugin versions -->
 		<org.sonatype.plugins.nexus.staging.maven.plugin.version>1.6.7</org.sonatype.plugins.nexus.staging.maven.plugin.version>
 		<org.apache.maven.plugins.maven.source.plugin.version>2.2.1</org.apache.maven.plugins.maven.source.plugin.version>
+		<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
+        <org.apache.maven.scm>1.8.1</org.apache.maven.scm>
+        <!-- Maven GPG plugin properties -->
+        <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
+        <gpg.skip>true</gpg.skip> <!-- skip maven gpg execution. Enable via -Dgpg.skip=false -->
+        <gpg.executable>gpg2</gpg.executable>
 
 	</properties>
 
@@ -513,6 +519,44 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- Travis CI plugin serverId must be the same as in setings.xml -->
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>${org.sonatype.plugins.nexus.staging.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+			<!-- Used only when deploying new release version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>${maven.gpg.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${maven.release.plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>${org.apache.maven.scm}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
 		</plugins>
 	</build>
 
