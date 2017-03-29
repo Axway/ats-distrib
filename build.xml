@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<project name="ats-release" basedir="." xmlns="antlib:org.apache.tools.ant" xmlns:ivy="antlib:org.apache.ivy.ant" xmlns:ant-contrib="antlib:net.sf.antcontrib" default="update-ats-jars-manifest">
+<project name="ats-release" basedir="." xmlns="antlib:org.apache.tools.ant" xmlns:ant-contrib="antlib:net.sf.antcontrib" default="update-ats-jars-manifest">
     <property name="zip.src.dir" value="${dist.dir}/zipsrc" />
 
     <target name="update-ats-jars-manifest" description="">
