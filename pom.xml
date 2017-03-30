@@ -31,12 +31,14 @@
 		<org.sonatype.plugins.nexus.staging.maven.plugin.version>1.6.7</org.sonatype.plugins.nexus.staging.maven.plugin.version>
 		<org.apache.maven.plugins.maven.source.plugin.version>2.2.1</org.apache.maven.plugins.maven.source.plugin.version>
 		<maven.release.plugin.version>2.5.3</maven.release.plugin.version>
-        <org.apache.maven.scm>1.8.1</org.apache.maven.scm>
-        <!-- Maven GPG plugin properties -->
-        <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
-        <gpg.skip>true</gpg.skip> <!-- skip maven gpg execution. Enable via -Dgpg.skip=false -->
-        <gpg.executable>gpg2</gpg.executable>
-
+                <org.apache.maven.scm>1.8.1</org.apache.maven.scm>
+                <!-- Maven GPG plugin properties -->
+                <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
+                <gpg.skip>true</gpg.skip> <!-- skip maven gpg execution. Enable via -Dgpg.skip=false -->
+                <gpg.executable>gpg2</gpg.executable>
+                <!-- Maven antrun properties -->
+		<ant-contrib.version>1.0b3</ant-contrib.version>
+		<ant-nodeps.version>1.8.1</ant-nodeps.version>
 	</properties>
 
 	<build>
@@ -465,6 +467,22 @@
 						<artifactId>ant-junit</artifactId>
 						<version>${ant-junit.version}</version>
 					</dependency>
+					<dependency>
+                                                <groupId>ant-contrib</groupId>
+                                                <artifactId>ant-contrib</artifactId>
+                                                <version>${ant-contrib.version}</version>
+                                                <exclusions>
+                                                    <exclusion>
+                                                        <groupId>ant</groupId>
+                                                        <artifactId>ant</artifactId>
+                                                    </exclusion>
+                                                </exclusions>
+                                        </dependency>
+                                        <dependency>
+                                                <groupId>org.apache.ant</groupId>
+                                                <artifactId>ant-nodeps</artifactId>
+                                                <version>${ant-nodeps.version}</version>
+                                        </dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
