@@ -4,7 +4,13 @@
 
 Produces a distribution ZIP archive of **Axway ATS framework** (https://github.com/Axway/ats-framework) which contains the framework and its third party dependencies. Useful when your project does not use Maven.
 
-**Download**: Releases are available at https://oss.sonatype.org/content/groups/public/com/axway/ats/distrib/ats-distrib/
+**Download**: Releases are available at https://oss.sonatype.org/content/groups/public/com/axway/ats/distrib/ats-distrib/  
+**Release notes** are published here https://axway.github.io/ats-framework/Release-Notes.html
+
+**Documentation** is available at https://axway.github.io/ats-framework/ATS-Documentation.html  
+**Video tutorials** are published on YouTube [here](https://www.youtube.com/watch?v=-4ZlEzU4ucM&list=PLBEEcZZeAijMOHzPVvrPKqeg4O079W33I)
+
+
 
 Other **related projects**:
 <ul>
