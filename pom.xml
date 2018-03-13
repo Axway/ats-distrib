@@ -4,7 +4,7 @@
 
 	<groupId>com.axway.ats.distrib</groupId>
 	<artifactId>ats-distrib</artifactId>
-	<version>4.0.4-SNAPSHOT</version>
+	<version>4.1.0-SNAPSHOT</version>
 	<name>ATS-Distrib</name>
 	<description>
     	Project, that builds zip archive with all needed jars for using ATS Framework, without using maven
