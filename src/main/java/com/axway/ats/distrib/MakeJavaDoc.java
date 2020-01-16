@@ -303,6 +303,12 @@ public class MakeJavaDoc {
                 if( file.isDirectory() ) {
                     f.mkdirs();
                     continue;
+                } else {
+                    // create the parent directory of the current file
+                    File parentFile = f.getParentFile();
+                    if (!parentFile.exists()) {
+                        parentFile.mkdirs();
+                    }
                 }
                 InputStream is = jar.getInputStream( file );
                 FileOutputStream fos = new FileOutputStream( f );
