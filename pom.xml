@@ -264,6 +264,28 @@
 									<version>${ats.framework.version}</version>
 									<classifier>sources</classifier>
 								</artifactItem>
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-azure-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+								</artifactItem>
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-azure-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+									<classifier>sources</classifier>
+								</artifactItem>
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-s3-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+								</artifactItem>
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-s3-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+									<classifier>sources</classifier>
+								</artifactItem>
 							</artifactItems>
 							<outputDirectory>${project.build.directory}/zipsrc</outputDirectory>
 						</configuration>
@@ -381,7 +403,18 @@
 									<version>${ats.framework.version}</version>
 									<classifier>sources</classifier>
 								</artifactItem>
-
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-azure-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+									<classifier>sources</classifier>
+								</artifactItem>
+								<artifactItem>
+									<groupId>com.axway.ats.framework.utilities</groupId>
+									<artifactId>ats-s3-utilities</artifactId>
+									<version>${ats.framework.version}</version>
+									<classifier>sources</classifier>
+								</artifactItem>
 							</artifactItems>
 
 							<outputDirectory>${project.build.directory}/src_jars</outputDirectory>
@@ -628,6 +661,16 @@
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-monitoringlibrary</artifactId>
+			<version>4.0.7-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.axway.ats.framework.utilities</groupId>
+			<artifactId>ats-azure-utilities</artifactId>
+			<version>4.0.7-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.axway.ats.framework.utilities</groupId>
+			<artifactId>ats-s3-utilities</artifactId>
 			<version>4.0.7-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
