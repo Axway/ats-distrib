@@ -4,7 +4,7 @@
 
 	<groupId>com.axway.ats.distrib</groupId>
 	<artifactId>ats-distrib</artifactId>
-	<version>4.0.7-SNAPSHOT</version>
+	<version>4.0.7</version>
 	<name>ATS-Distrib</name>
 	<description>
     	Project, that builds zip archive with all needed jars for using ATS Framework, without using maven
@@ -610,73 +610,73 @@
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-core</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-configuration</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-log</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-environmentcleanup</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-testharness</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework.agent.standalone</groupId>
 			<artifactId>ats-agent-systemoperations</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 			<classifier>client</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-uiengine</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework.agent</groupId>
 			<artifactId>ats-agent-core</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework.agent.webapp</groupId>
 			<artifactId>ats-agent-webapp-client</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-actionlibrary</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-rbv</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework</groupId>
 			<artifactId>ats-monitoringlibrary</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework.utilities</groupId>
 			<artifactId>ats-azure-utilities</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 		<dependency>
 			<groupId>com.axway.ats.framework.utilities</groupId>
 			<artifactId>ats-s3-utilities</artifactId>
-			<version>4.0.7-SNAPSHOT</version>
+			<version>4.0.7</version>
 		</dependency>
 	</dependencies>
 	
@@ -708,7 +708,7 @@
 		<connection>scm:git:https://github.com/Axway/ats-distrib.git</connection>
 		<developerConnection>scm:git:git@github.com:Axway/ats-distrib.git</developerConnection>
 		<url>https://github.com/Axway/ats-distrib</url>
-	  <tag>HEAD</tag>
+	  <tag>4.0.7</tag>
   </scm>
 
 	<developers>
