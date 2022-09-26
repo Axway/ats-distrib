@@ -2,9 +2,9 @@
 [![GitHub version](https://badge.fury.io/gh/Axway%2Fats-distrib.svg)](https://badge.fury.io/gh/Axway%2Fats-distrib)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Produces a distribution ZIP archive of **Axway ATS framework** (https://github.com/Axway/ats-framework) which contains the framework and its third party dependencies. Useful when your project does not use Maven.
+Produces a distribution (ZIP archive) of **Axway ATS framework** (https://github.com/Axway/ats-framework) which contains the framework and its third party dependencies. Useful when your project does not use Maven.
 
-**Download**: Releases are available at https://oss.sonatype.org/content/groups/public/com/axway/ats/distrib/ats-distrib/  
+**Download**: Some releases are available at https://oss.sonatype.org/content/groups/public/com/axway/ats/distrib/ats-distrib/  
 **Release notes** are published here https://axway.github.io/ats-framework/Release-Notes.html
 
 **Documentation** is available at https://axway.github.io/ats-framework/ATS-Documentation.html  

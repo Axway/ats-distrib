@@ -12,14 +12,7 @@ tmp/
 local.properties
 .settings/
 .loadpath
-
-# Eclipse Core
-#.project
-# JDT-specific (Eclipse Java Development Tools)
-#.classpath
-
-# External tool builders
-.externalToolBuilders/
+.checkstyle
 
 # Locally stored "Eclipse launch configurations"
 *.launch
@@ -27,9 +20,21 @@ local.properties
 # PDT-specific
 .buildpath
 
+# External tool builders
+.externalToolBuilders/
+
+# Ignore changes in Eclipse .project and .classpath
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### IntelliJ IDEA exclusions
+.idea/
+*.iml
+
 ### Ant ###
 build/
-ivy-lib/
 test-output/
 
 ### Maven ###
@@ -42,4 +47,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
