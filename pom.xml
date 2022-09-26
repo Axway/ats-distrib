@@ -5,7 +5,7 @@
 
     <groupId>com.axway.ats.distrib</groupId>
     <artifactId>ats-distrib</artifactId>
-    <version>4.0.11-log4j1-SNAPSHOT</version>
+    <version>4.0.10</version>
     <name>ATS-Distrib</name>
     <description>
         Project, that builds ZIP archive with all needed jars for using ATS Framework, without using Maven
